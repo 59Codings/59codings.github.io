@@ -29,7 +29,7 @@ button {
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 12px;
+    border-radius: 12px; 
     cursor: pointer;
     font-size: 16px;
     width: 100%;
@@ -48,35 +48,32 @@ input[type="text"]:focus {
     border: 1px solid #007bff;
 }
 
-#snow-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    z-index: 9999;
-    overflow: hidden;
+.category {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
 }
 
-.snowflake {
-    position: absolute;
-    top: -10px;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    opacity: 0.8;
-    animation: snow 10s linear infinite;
+.tool {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
 }
 
-@keyframes snow {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(100vh);
-        opacity: 0;
-    }
+.tool h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.tool p {
+    font-size: 16px;
+    color: #aaa;
+}
+
+.tool:hover {
+    background-color: #444;
 }
